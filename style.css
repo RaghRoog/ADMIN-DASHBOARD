@@ -1,0 +1,232 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+*,*:focus,*:hover{
+    outline:none;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
+}
+.header{
+    height:70%;
+    grid-column: 2/4;
+    background-color: rgb(146, 146, 146);
+    box-shadow: 20px 8px 28px gray;
+    position: sticky;
+    top: 0;
+}
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: rgb(82, 115, 77);
+}
+.main{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.content-container{
+    margin: 5%;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: repeat(2, minmax(200px, 400px));
+    grid-template-rows: repeat(6, minmax(150px, 300px));
+}
+.main-content{
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px 2px gray;
+    border-left: 15px solid rgb(82, 115, 77);
+    transition: 0.9s;
+}
+.main-content:hover{
+    transform: scale(1.1);
+}
+.search-form input{
+    border: 5px solid rgb(71, 96, 114);
+    border-radius: 10px;
+    width: 70%;
+    height: 50%;
+    font-size: 24px;
+}
+.search-form input:focus{
+    border: 5px solid rgb(51, 66, 87);
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 66, 87);
+}
+.silverhand{
+    margin: 15px;
+    width: auto;
+    height: 50px;
+    border-radius: 100px;
+}
+.silverhand:active{
+    transform: translateY(3px);
+}
+.bell{
+    height: 30px;
+    width: auto;
+}
+.bell:active, button:active{
+    transform: translateY(3px);
+}
+.name{
+    font-size: 24px;
+}
+.magnify{
+    height: 30px;
+    width: auto;
+    padding-right: 10px;
+}
+.magnify:active{
+    transform: translateY(3px);
+}
+.search-and-profile{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+.search-form{
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.header-bottom{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.welcome-section{
+    margin-left: 15%;
+    display: flex;
+    gap: 3%;
+}
+.welcome-section img{
+    height: 100px;
+    width: auto;
+    border-radius: 100px;
+}
+.user{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+button{
+    width: 25%;
+    height: 30%;
+    border-radius: 15px;
+    background-color: rgb(172, 189, 197);
+    transition: 0.3s;
+}
+button:hover{
+    background-color: rgb(82, 104, 106);
+    height: 32%;
+    width: 27%;
+    font-size: 1.32rem;
+}
+.sidebar-content{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.sidebar-content:hover{
+    transform: translateX(5%);   
+}
+.sidebar-content:active{
+    transform: translateY(5%);
+}
+#dashboard{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    color: white;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 2.5rem;
+}
+#dashboard img{
+    height: 80px;
+    width: auto;
+}
+.sidebar-content-container{
+    position: sticky;
+    top: 0;
+}
+#space{
+    height: 50px;
+}
+.main-right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.announcements-container, .trending-container{
+    height: 30%;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px 2px gray;
+}
+.right-space{
+    height: 10%;
+}
+.right-sida-label{
+    font-size: 2rem;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+.trending-container{
+    display: grid;
+}
+.trending-container img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.trending-container div{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-left: 5%;
+    font-size: 1rem;
+}
+.announcements-container{
+    display: grid;
+    grid-template-rows: 5fr 1fr 5fr 1fr 5fr;
+}
+hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    border-top: 1px solid gray;
+    margin-left: 10%;
+}
+.announcement{
+    margin-top: 2%;
+    margin-left: 10%;
+}
